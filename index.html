@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,18 +7,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
-    <div class="logo"><img src="http://placehold.it/130x50" alt=""></div>
-    <nav class="main-nav">
-      <ul>
-        <li class="main-nav-item"><a href="#">Номера</a></li>
-        <li class="main-nav-item"><a href="#">Фото</a></li>
-        <li class="main-nav-item"><a href="#">Гостям</a></li>
-        <li class="main-nav-item"><a href="#">Забронировать</a></li>
-      </ul>
-    </nav>
-    <div class="header-phone"><span class="header-phone-number">+7-999-105-05-25</span></div>
+    <div class="container-fluid">
+      <a href="#" class="logo">
+        <img src="http://placehold.it/130x50" alt="">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav-item"><a href="#">Номера</a></li>
+          <li class="main-nav-item"><a href="#">Фото</a></li>
+          <li class="main-nav-item"><a href="#">Гостям</a></li>
+          <li class="main-nav-item"><a href="#">Забронировать</a></li>
+        </ul>
+      </nav>
+      <a href="tel" class="header-phone">+7-999-105-05-25</a>
+    </div>
   </header>
+
   <section class="promo">
     <div class="container">
       <h1 class="promo-title promo-title-white">Хостел в центра Петербурга</h1>
@@ -26,172 +32,205 @@
       <a href="#" class="btn btn-promo">Забронировать</a>
     </div>
   </section>
+
   <section class="about-fluger bg-red">
     <div class="container">
       <h2 class="about-title">Что такое "Флюгер"?</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-4 about-fluger-block ">
           <strong class="about-block-title">Центр гроода</strong>
-          <span class="about-block-dscr">15 минут пешком до музеев и баров</span>
+          <p class="about-block-dscr">15 минут пешком до музеев и баров</p>
         </div>
         <div class="col-xs-12 col-sm-4 about-fluger-block">
           <strong class="about-block-title">Закаты на крыше</strong>
-          <span class="about-block-dscr">С видом на канал Грибоедова и Спас-на-Крови</span>
+          <p class="about-block-dscr">С видом на канал Грибоедова и Спас-на-Крови</p>
         </div>
         <div class="col-xs-12 col-sm-4 about-fluger-block">
           <strong class="about-block-title">Светлые номера</strong>
-          <span class="about-block-dscr">На 12, 6 и 2 человек от 500 до 2500 за ночь</span>
+          <p class="about-block-dscr">На 12, 6 и 2 человек от 500 до 2500 за ночь</p>
         </div>
       </div>
     </div>
   </section>
+
   <section class="rooms-preview">
     <div class="container">
-      <h2 class="hr-title">Номера</h2>
+      <h2 class="border-title">Номера</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-6 room-preview-block">
           <div class="room-preview-info">
+           <!-- фоновые изображения с псевдоэлементами которые меняются при наведении-->
             <h3 class="room-preview-title">12-местный</h3>
-            <span class="room-preview-info-text">Место:</span>
-            <span class="room-preview-info-cost">500 Р</span>
-            <span class="room-preview-info-text">Номер:</span>
-            <span class="room-preview-info-cost">5000 Р</span>
+            <table>
+              <tr>
+                <th>Место:</th>
+                <th>500 Р</th>
+              </tr>
+              <tr>
+                <th>Номер:</th>
+                <th>5000 Р</th>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 room-preview-block">
           <div class="room-preview-info">
             <h3 class="room-preview-title">6-местный</h3>
-            <span class="room-preview-info-text">Место:</span>
-            <span class="room-preview-info-cost">500 Р</span>
-            <span class="room-preview-info-text">Номер:</span>
-            <span class="room-preview-info-cost">5000 Р</span>
+            <table>
+              <tr>
+                <th>Место:</th>
+                <th>500 Р</th>
+              </tr>
+              <tr>
+                <th>Номер:</th>
+                <th>5000 Р</th>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 room-preview-block">
           <div class="room-preview-info">
             <h3 class="room-preview-title">2-местный</h3>
-            <span class="room-preview-info-text">Место:</span>
-            <span class="room-preview-info-cost">500 Р</span>
-            <span class="room-preview-info-text">Номер:</span>
-            <span class="room-preview-info-cost">5000 Р</span>
+            <table>
+              <tr>
+                <th>Место:</th>
+                <th>500 Р</th>
+              </tr>
+              <tr>
+                <th>Номер:</th>
+                <th>5000 Р</th>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 room-preview-block">
           <div class="room-preview-info">
             <h3 class="room-preview-title">Люкс</h3>
-            <span class="room-preview-info-text">Место:</span>
-            <span class="room-preview-info-cost">Не сдается</span>
-            <span class="room-preview-info-text">Номер:</span>
-            <span class="room-preview-info-cost">5000 Р</span>
+            <table>
+              <tr>
+                <th>Место:</th>
+                <th>Не сдается</th>
+              </tr>
+              <tr>
+                <th>Номер:</th>
+                <th>5000 Р</th>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
       <a href="#" class="btn btn-red">Выбрать номер</a>
     </div>
   </section>
+
   <section class="photo-preview hidden-xs">
-    <div class="container">
-      <h2 class="hr-title">Фото хостела</h2>
+    <div class="container-fluid">
+      <h2 class="border-title">Фото хостела</h2>
       <div class="row">
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+      <!-- ссылки на большую картинку -->
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
+        </a>
       </div>
       <a href="#" class="btn btn-red">Все фотографии</a>
     </div>
   </section>
+
   <section class="about-guests bg-red">
     <div class="container">
       <h2 class="about-title">"Флюгер" предлагает гостям</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-6 about-guests-block">
           <strong class="about-block-title">Бесплатно сидеть в интернете</strong>
-          <span class="about-block-dscr">Wi-Fi со скоростью 30 Мбит, который ловит даже на крыше</span>
+          <p class="about-block-dscr">Wi-Fi со скоростью 30 Мбит, который ловит даже на крыше</p>
         </div>
         <div class="col-xs-12 col-sm-6 about-guests-block">
           <strong class="about-block-title">Готовить обеды на кухне</strong>
-          <span class="about-block-dscr">Или дать позаботиться о них хостелу за 300 Р</span>
+          <p class="about-block-dscr">Или дать позаботиться о них хостелу за 300 Р</p>
         </div>
         <div class="col-xs-12 col-sm-6 about-guests-block">
           <strong class="about-block-title">Заботиться о ценных вещях</strong>
-          <span class="about-block-dscr">За каждой кроватью в хостеле закреплена камера хранения</span>
+          <p class="about-block-dscr">За каждой кроватью в хостеле закреплена камера хранения</p>
         </div>
         <div class="col-xs-12 col-sm-6 about-guests-block">
           <strong class="about-block-title">Слушать шум дождя на мансарде</strong>
-          <span class="about-block-dscr">Она устроена для работы и отдыха и вмещает до 30 человек</span>
+          <p class="about-block-dscr">Она устроена для работы и отдыха и вмещает до 30 человек</p>
         </div>
       </div>
     </div>
   </section>
+
   <section class="contacts">
     <div class="container">
-      <h2 class="hr-title">Контакты</h2>
+      <h2 class="border-title">Контакты</h2>
       <div class="row">
-        <div class="col-xs-12 col-lg-4 contacts-address">
-          <span>Наб. Канала Грибоедова,29</span>
+        <div class="col-xs-12 col-lg-6">
+          <span class="contacts-address">Наб. Канала Грибоедова,29</span>
         </div>
-        <div class="col-xs-12 col-lg-offset-2 col-lg-3 contacts-phone">
-          <span>+7-999-105-05-25</span>
+        <div class="col-xs-12  col-lg-3">
+          <a href="tel" class="contacts-phone">+7-999-105-05-25</a>
         </div>
-        <div class="col-xs-12 col-lg-3 contacts-email">
-          <span>fluger@gmail.com</span>
+        <div class="col-xs-12 col-lg-3">
+          <a href="mailto" class="contacts-email">fluger@gmail.com</a>
         </div>
       </div>
     </div>
     <div class="map"></div>
     <a href="#" class="btn btn-red">Забронировать</a>
   </section>
+
   <footer class="bg-red">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-push-6 footer-nav">
-          <nav class="main-nav">
+          <nav class="main-nav footer-nav">
             <ul>
-              <li class="main-nav-item"><a href="#">Номера</a></li>
-              <li class="main-nav-item"><a href="#">Фото</a></li>
-              <li class="main-nav-item"><a href="#">Гостям</a></li>
-              <li class="main-nav-item"><a href="#">Забронировать</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Номера</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Фото</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Гостям</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Забронировать</a></li>
             </ul>
           </nav>
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-pull-6 footer-contacts">
           <div class="row">
             <div class="col-xs-12 col-md-6 footer-address">
-              <span>Санкт-Петербург</span>
-              <span>Наб. канала Грибоедова, 29</span>
+              Санкт-Петербург <br/>
+              Наб. канала Грибоедова, 29
             </div>
-            <div class="col-xs-12 col-md-6 footer-phone">
-              <span>+7 999 105-05-25</span>
-              <span>fluger@gmail.com</span>
+            <div class="col-xs-12 col-md-6">
+              <a href="tel" class="footer-phone">+7 999 105-05-25</a>
+              <a href="mailto" class="footer-email">fluger@gmail.com</a>
             </div>
             <div class="col-xs-12 copyright">
-              <span>© 2015 «Флюгер»</span>
+              © 2015 «Флюгер»
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
 </body>
 </html>

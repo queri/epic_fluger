@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,184 +7,219 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
-    <a class="logo"><img src="http://placehold.it/130x50" alt=""></a>
-    <nav class="main-nav">
-      <ul>
-        <li class="main-nav-item"><a href="#">Номера</a></li>
-        <li class="main-nav-item"><a href="#">Фото</a></li>
-        <li class="main-nav-item"><a href="#">Гостям</a></li>
-        <li class="main-nav-item"><a href="#">Забронировать</a></li>
-      </ul>
-    </nav>
-    <div class="header-phone"><span class="header-phone-number">+7-999-105-05-25</span></div>
+    <div class="container-fluid">
+      <a href="#" class="logo">
+        <img src="http://placehold.it/130x50" alt="">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav-item"><a href="#">Номера</a></li>
+          <li class="main-nav-item"><a href="#">Фото</a></li>
+          <li class="main-nav-item"><a href="#">Гостям</a></li>
+          <li class="main-nav-item"><a href="#">Забронировать</a></li>
+        </ul>
+      </nav>
+      <a href="tel" class="header-phone">+7-999-105-05-25</a>
+    </div>
   </header>
-  <section class="promo">
+
+  <section class="promo-rooms">
     <div class="container">
       <h1 class="promo-title promo-title-red">Номера</h1>
       <p class="promo-address">Наб. Канала Грибоедова,29</p>
     </div>
   </section>
-  <section class="rooms">
+
+  <div class="rooms">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="http://placehold.it/460x460" alt="">
-            <h3 class="room-title title-red">12-местный</h3>
-            <div class="row">
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span class="active">Кровать</span>
-                <span class="active">Шкаф</span>
-                <span>Тумбочка</span>
-                <span class="active">Лампа</span>
-              </div>
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span>Стол</span>
-                <span>Балкон</span>
-                <span>Туалет</span>
-                <span>Душ</span>
-              </div>
-            </div>
-            <span class="room-info-text">Место:</span>
-            <span class="room-info-cost">500 Р</span>
-            <span class="room-info-text">Номер:</span>
-            <span class="room-info-cost">5000 Р</span>
-            <a href="#" class="btn btn-red">Забронировать</a>
+          <h3 class="room-title title-red">12-местный</h3>
+          <div class="row">
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check yes">есть </span>Кровать</li>
+              <li><span class="check yes">есть </span>Шкаф</li>
+              <li><span class="check no">нет </span>Тумбочка</li>
+              <li><span class="check yes">есть </span>Лампа</li>
+            </ul>
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check no">нет </span>Стол</li>
+              <li><span class="check no">нет </span>Балкон</li>
+              <li><span class="check no">нет </span>Туалет</li>
+              <li><span class="check no">нет </span>Душ</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Место:</th>
+              <th>500 Р</th>
+            </tr>
+            <tr>
+              <th>Номер:</th>
+              <th>5000 Р</th>
+            </tr>
+          </table>
+          <a href="#modal" class="btn btn-red">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="http://placehold.it/460x460" alt="">
-            <h3 class="room-title title-red">6-местный</h3>
-            <div class="row">
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span class="active">Кровать</span>
-                <span class="active">Шкаф</span>
-                <span class="active">Тумбочка</span>
-                <span class="active">Лампа</span>
-              </div>
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span>Стол</span>
-                <span>Балкон</span>
-                <span>Туалет</span>
-                <span>Душ</span>
-              </div>
-            </div>
-            <span class="room-info-text">Место:</span>
-            <span class="room-info-cost">500 Р</span>
-            <span class="room-info-text">Номер:</span>
-            <span class="room-info-cost">5000 Р</span>
-            <a href="#" class="btn btn-red">Забронировать</a>
+          <h3 class="room-title title-red">6-местный</h3>
+          <div class="row">
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check yes">есть </span>Кровать</li>
+              <li><span class="check yes">есть </span>Шкаф</li>
+              <li><span class="check yes">есть </span>Тумбочка</li>
+              <li><span class="check yes">есть </span>Лампа</li>
+            </ul>
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check no">нет </span>Стол</li>
+              <li><span class="check no">нет </span>Балкон</li>
+              <li><span class="check no">нет </span>Туалет</li>
+              <li><span class="check no">нет </span>Душ</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Место:</th>
+              <th>500 Р</th>
+            </tr>
+            <tr>
+              <th>Номер:</th>
+              <th>5000 Р</th>
+            </tr>
+          </table>
+          <a href="#modal" class="btn btn-red">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="http://placehold.it/460x460" alt="">
-            <h3 class="room-title title-red">2-местный</h3>
-            <div class="row">
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span class="active">Кровать</span>
-                <span class="active">Шкаф</span>
-                <span class="active">Тумбочка</span>
-                <span class="active">Лампа</span>
-              </div>
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span>Стол</span>
-                <span>Балкон</span>
-                <span class="active">Туалет</span>
-                <span>Душ</span>
-              </div>
-            </div>
-            <span class="room-info-text">Место:</span>
-            <span class="room-info-cost">500 Р</span>
-            <span class="room-info-text">Номер:</span>
-            <span class="room-info-cost">5000 Р</span>
-            <a href="#" class="btn btn-red">Забронировать</a>
+          <h3 class="room-title title-red">2-местный</h3>
+          <div class="row">
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check yes">есть </span>Кровать</li>
+              <li><span class="check yes">есть </span>Шкаф</li>
+              <li><span class="check yes">есть </span>Тумбочка</li>
+              <li><span class="check yes">есть </span>Лампа</li>
+            </ul>
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check no">нет </span>Стол</li>
+              <li><span class="check no">нет </span>Балкон</li>
+              <li><span class="check yes">есть </span>Туалет</li>
+              <li><span class="check no">нет </span>Душ</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Место:</th>
+              <th>500 Р</th>
+            </tr>
+            <tr>
+              <th>Номер:</th>
+              <th>5000 Р</th>
+            </tr>
+          </table>
+          <a href="#modal" class="btn btn-red">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="http://placehold.it/460x460" alt="">
-            <h3 class="room-title title-red">Люкс</h3>
-            <div class="row">
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span class="active">Кровать</span>
-                <span class="active">Шкаф</span>
-                <span class="active">Тумбочка</span>
-                <span class="active">Лампа</span>
-              </div>
-              <div class="col-xs-6 col-md-4 room-parts-list">
-                <span class="active">Стол</span>
-                <span class="active">Балкон</span>
-                <span class="active">Туалет</span>
-                <span class="active">Душ</span>
-              </div>
-            </div>
-            <span class="room-info-text">Место:</span>
-            <span class="room-info-cost">Не сдается</span>
-            <span class="room-info-text">Номер:</span>
-            <span class="room-info-cost">5000 Р</span>
-            <a href="#" class="btn btn-red">Забронировать</a>
+          <h3 class="room-title title-red">Люкс</h3>
+          <div class="row">
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check yes">есть </span>Кровать</li>
+              <li><span class="check yes">есть </span>Шкаф</li>
+              <li><span class="check yes">есть </span>Тумбочка</li>
+              <li><span class="check yes">есть </span>Лампа</li>
+            </ul>
+            <ul class="col-xs-6 col-md-4 room-parts-list">
+              <li><span class="check yes">есть </span>Стол</li>
+              <li><span class="check yes">есть </span>Балкон</li>
+              <li><span class="check yes">есть </span>Туалет</li>
+              <li><span class="check yes">есть </span>Душ</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <th>Место:</th>
+              <th>Не сдается</th>
+            </tr>
+            <tr>
+              <th>Номер:</th>
+              <th>5000 Р</th>
+            </tr>
+          </table>
+          <a href="#modal" class="btn btn-red">Забронировать</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
   <section class="photo-preview hidden-xs">
-    <div class="container">
-      <h2 class="hr-title">Фото хостела</h2>
+    <div class="container-fluid">
+      <h2 class="border-title">Фото хостела</h2>
       <div class="row">
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+      <!-- ссылки на большую картинку -->
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
-        <div class="col-sm-6 col-lg-3 photo-preview-block">
+        </a>
+        <a href="#" class="col-sm-6 col-lg-3 photo-preview-block">
           <img src="http://placehold.it/260x180" alt="fluger">
-        </div>
+        </a>
       </div>
       <a href="#" class="btn btn-red">Все фотографии</a>
     </div>
   </section>
+
   <footer class="bg-red">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-push-6 footer-nav">
-          <nav class="main-nav">
+          <nav class="main-nav footer-nav">
             <ul>
-              <li class="main-nav-item"><a href="#">Номера</a></li>
-              <li class="main-nav-item"><a href="#">Фото</a></li>
-              <li class="main-nav-item"><a href="#">Гостям</a></li>
-              <li class="main-nav-item"><a href="#">Забронировать</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Номера</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Фото</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Гостям</a></li>
+              <li class="main-nav-item footer-nav-item"><a href="#">Забронировать</a></li>
             </ul>
           </nav>
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-pull-6 footer-contacts">
           <div class="row">
             <div class="col-xs-12 col-md-6 footer-address">
-              <span>Санкт-Петербург</span>
-              <span>Наб. канала Грибоедова, 29</span>
+              Санкт-Петербург <br/>
+              Наб. канала Грибоедова, 29
             </div>
-            <div class="col-xs-12 col-md-6 footer-phone">
-              <span>+7 999 105-05-25</span>
-              <span>fluger@gmail.com</span>
+            <div class="col-xs-12 col-md-6">
+              <a href="tel" class="footer-phone">+7 999 105-05-25</a>
+              <a href="mailto" class="footer-email">fluger@gmail.com</a>
             </div>
             <div class="col-xs-12 copyright">
-              <span>© 2015 «Флюгер»</span>
+              © 2015 «Флюгер»
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
