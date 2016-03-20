@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Fluger</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <script src="js/live.js"></script>
 </head>
@@ -74,14 +75,14 @@
           <table class="info-table">
             <tr>
               <th>Место:</th>
-              <td>500 Р</td>
+              <td>500 ₽</td>
             </tr>
             <tr>
               <th>Номер:</th>
-              <td>5000 Р</td>
+              <td>5000 ₽</td>
             </tr>
           </table>
-          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="12-местный номер">Забронировать</a>
+          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="1">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="img/img-room-preview-2.jpg" alt="">
@@ -103,14 +104,14 @@
           <table class="info-table">
             <tr>
               <th>Место:</th>
-              <td>500 Р</td>
+              <td>500 ₽</td>
             </tr>
             <tr>
               <th>Номер:</th>
-              <td>5000 Р</td>
+              <td>5000 ₽</td>
             </tr>
           </table>
-          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="6-местный номер">Забронировать</a>
+          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="2">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="img/img-room-preview-3.jpg" alt="">
@@ -132,14 +133,14 @@
           <table class="info-table">
             <tr>
               <th>Место:</th>
-              <td>500 Р</td>
+              <td>500 ₽</td>
             </tr>
             <tr>
               <th>Номер:</th>
-              <td>5000 Р</td>
+              <td>5000 ₽</td>
             </tr>
           </table>
-          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="2-местный номер">Забронировать</a>
+          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="3">Забронировать</a>
         </div>
         <div class="col-xs-12 col-sm-6 room-block">
           <img src="img/img-room-preview-4.jpg" alt="">
@@ -165,10 +166,10 @@
             </tr>
             <tr>
               <th>Номер:</th>
-              <td>5000 Р</td>
+              <td>5000 ₽</td>
             </tr>
           </table>
-          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="Люкс">Забронировать</a>
+          <a href="#room-type-modal" class="btn btn-red js-modal-room" data-rooms-type="4">Забронировать</a>
         </div>
       </div>
     </div>
@@ -277,6 +278,7 @@
       </div>
     </div>
   </form>
+
   <form class="modal fade" id="room-type-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -286,7 +288,14 @@
         </div>
         <div class="modal-body">
           <input type="text" placeholder="Ваше имя" class="input-main" />
-          <input type="text" class="js-room input-main" value="Ds,thbnt yjvth"/>
+          <!-- <input type="text" class="js-room input-main" value=""/> -->
+          <select name="rooms" class="input-main select-main js-room-select">
+            <option selected disabled="disabled">Выберите номер</option>
+            <option value="1">12-местный</option>
+            <option value="2">6-местный</option>
+            <option value="3">2-местный</option>
+            <option value="4">Люкс</option>
+          </select>
           <input type="text" placeholder="Телефон для связи" class="input-main"/>
           <input type="text" placeholder="Ваш E-mail" class="input-main"/>
           <p class="booking-text">Оставьте свои данные и наш менеджер свяжится с вами</p>

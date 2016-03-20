@@ -1695,31 +1695,6 @@ hr {
 .mobile-nav .main-nav-item a{
   color: #fff;
 }
-
-@media (min-width: 768px) {
-  .header-phone{
-    margin-right: 80px;
-  }
-}
-@media (min-width: 992px) {
-  .main-nav-item a{
-    padding: 5px 5px;
-  }
-  .main-header{
-    padding: 10px 60px;
-  }
-  .header-phone{
-    margin-right:0;
-  }
-}
-@media (min-width: 1200px) {
-  .main-nav-item a{
-    padding: 5px 20px;
-  }
-  .header-nav{
-    float: right;
-  }
-}
 .header-phone{
   display: inline-block;
   float: right;
@@ -1769,20 +1744,6 @@ hr {
   text-transform: uppercase;
   margin-top: 160px;
 }
-@media (min-width: 768px) {
-  .promo-title{
-    font-size: 36px;
-    margin-top: 175px;
-  }
-}
-@media (min-width: 992px) {
-  .promo{
-    min-height: 600px;
-  }
-  .promo-title{
-    margin-top: 240px;
-  }
-}
 .promo-address{
   color: #fff;
   font-size: 18px;
@@ -1815,16 +1776,7 @@ hr {
   text-align: left;
   padding: 20px 0px;
 }
-@media (min-width: 768px) {
-  .about-fluger-block{
-    padding: 30px 0px;
-  }
-}
-@media (min-width: 992px) {
-  .about-fluger-block{
-    padding: 40px 50px;
-  }
-}
+
 .about-block-title{
   font-size: 18px;
   font-weight: bold;
@@ -2025,63 +1977,11 @@ hr {
   display: block;
   font-size: 14px;
 }
-@media (min-width: 768px) {
-  .footer-nav-item a{
-    padding: 5px;
-  }
-  .footer-contacts{
-    padding-top: 20px;
-  }
-  .about-guests-block{
-    padding: 0 50px 40px 0;
-  }
-}
-@media (min-width: 992px) {
-  .room-preview-info{
-    min-height: 460px;
-  }
-  .room-preview-title{
-    padding-top: 150px;
-  }
-  .footer-nav-item a{
-    padding: 7px 20px;
-    margin-right: 40px;
-  }
-  .footer-nav-item:nth-child(2n+1){
-    float: left;
-  }
-  .footer-address{
-    padding-top: 3px;
-  }
-  .footer-link{
-    padding-top: 3px;
-  }
-  .main-footer{
-    padding-bottom: 10px;
-  }
-  .footer-contacts{
-    padding-left: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .room-preview-info{
-    min-height: 500px;
-  }
-  .main-footer{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
 #map{
   width: 100%;
   height: 330px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  #map{
-    height: 440px;
-  }
 }
 .input-main{
   width: 45%;

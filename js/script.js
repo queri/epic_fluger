@@ -44,18 +44,23 @@ function mapInit() {
 
 //modal
 
-var newVal = $('a.js-modal-room').data('rooms-type');
+// var newVal = $('a.js-modal-room').data('rooms-type');
+
 $('a.js-modal-room').on('click', function(){
-    $('#room-type-modal').modal('show').find('.js-room').val(newVal);
-  })
+  var roomType = $(this).data('rooms-type');
+  $('#room-type-modal .js-room-select option[selected]')
+    .removeAttr('selected');
+  $('#room-type-modal')
+    .modal('show')
+    .find('.js-room-select option[value="'+roomType+'"]')
+    .attr('selected',"selected");
+});
 
+$('a.js-modal').on('click', function(){
+  $('#total-modal').modal('show');
+});
 
-
-  $('a.js-modal').on('click', function(){
-    $('#total-modal').modal('show');
-  });
-
-  var toggler = document.getElementById('toggler');
+var toggler = document.getElementById('toggler');
   toggler.onclick = function(e){
     e.preventDefault();
     toggler.classList.toggle('toggler-close');
