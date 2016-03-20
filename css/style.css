@@ -1633,6 +1633,7 @@ hr {
   position: absolute;
   top: 0;
   right: 0;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
 }
 .toggler span{
   width: 18px;
@@ -1737,7 +1738,7 @@ hr {
   font-size: 18px;
   font-weight: bold;
   border: 3px solid #f44336;
-  padding: 10px 40px;
+  padding: 10px 50px;
   margin: 20px;
   display: inline-block;
 }
@@ -1756,11 +1757,6 @@ hr {
   min-height: 470px;
   text-align: center;
 }
-@media (min-width: 992px) {
-  .promo{
-    min-height: 600px;
-  }
-}
 .promo-title-white{
   color: #fff;
 }
@@ -1768,10 +1764,24 @@ hr {
   color: #ef5350;
 }
 .promo-title{
-  font-size: 36px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 240px;
+  margin-top: 160px;
+}
+@media (min-width: 768px) {
+  .promo-title{
+    font-size: 36px;
+    margin-top: 175px;
+  }
+}
+@media (min-width: 992px) {
+  .promo{
+    min-height: 600px;
+  }
+  .promo-title{
+    margin-top: 240px;
+  }
 }
 .promo-address{
   color: #fff;
@@ -1794,6 +1804,7 @@ hr {
 }
 .about-fluger{
   text-align: center;
+  padding: 60px 0;
 }
 .about-title{
   font-weight: bold;
@@ -1802,7 +1813,7 @@ hr {
 }
 .about-fluger-block{
   text-align: left;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 @media (min-width: 768px) {
   .about-fluger-block{
@@ -1821,16 +1832,16 @@ hr {
 .about-block-dscr{
   font-size: 14px;
   padding-right: 30px;
-  margin: 0 0 0 60px;
+  margin: 0 0 0 75px;
 }
 .about-fluger-block:before{
   content: '';
-  display: inline-block;
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   float: left;
   margin-top: 4px;
+  margin-left: 15px;
 }
 .about-center:before{
   background-image: url(../img/icon-about-center.png);
@@ -1855,10 +1866,12 @@ hr {
   width: 78px;
   height: 5px;
   background-color: #ef5350;
-  margin: 10px auto;
+  margin: 12px auto;
 }
 .rooms-preview{
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 .info-table{
   border: none;
@@ -1886,10 +1899,10 @@ hr {
   color: #212121;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .room-preview-info{
-  min-height: 460px;
+  min-height: 315px;
   background-size: cover;
   position: relative;
 }
@@ -1932,19 +1945,19 @@ hr {
 }
 .about-guests-block{
   text-align: left;
-  padding: 0 50px 40px 0;
+  padding: 0 20px 40px 0;
 }
 .about-guests-block:nth-child(2n+1){
   clear: both;
 }
 .about-guests-block:before{
   content: '';
-  display: inline-block;
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   float: left;
   margin-top: 4px;
+  margin-left: 15px;
 }
 .about-internet:before{
   background-image: url(../img/icon-about-intenet.png);
@@ -1962,6 +1975,7 @@ hr {
   margin: 60px 0 40px;
 }
 .contacts{
+  padding-top: 40px;
   margin-bottom: 40px;
 }
 .center-btn{
@@ -1972,7 +1986,7 @@ hr {
   color: #212121;
   display: inline-block;
   margin-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .contacts-info:before{
   content: '';
@@ -2018,8 +2032,17 @@ hr {
   .footer-contacts{
     padding-top: 20px;
   }
+  .about-guests-block{
+    padding: 0 50px 40px 0;
+  }
 }
 @media (min-width: 992px) {
+  .room-preview-info{
+    min-height: 460px;
+  }
+  .room-preview-title{
+    padding-top: 150px;
+  }
   .footer-nav-item a{
     padding: 7px 20px;
     margin-right: 40px;
@@ -2041,6 +2064,9 @@ hr {
   }
 }
 @media (min-width: 1200px) {
+  .room-preview-info{
+    min-height: 500px;
+  }
   .main-footer{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -2049,6 +2075,8 @@ hr {
 #map{
   width: 100%;
   height: 330px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   #map{
