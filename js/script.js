@@ -59,7 +59,7 @@ $('a.js-modal-room').on('click', function(){
 $('a.js-modal').on('click', function(){
   $('#total-modal').modal('show');
 });
-
+// mobile-menu
 var toggler = document.getElementById('toggler');
   toggler.onclick = function(e){
     e.preventDefault();
